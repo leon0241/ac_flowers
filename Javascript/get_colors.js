@@ -4,20 +4,19 @@
 import ColorThief from './Tools/color-thief/color-thief.mjs'
 import { rgbToHsl } from './Tools/color-conversion-algorithms.js'
 
-var arrc = get_color_palette()
-rgbToHslConvert(arrc)
+//var arrc = get_color_palette()
+//rgbToHslConvert(arrc)
+//document.querySelector('img')
 
-function get_color_palette() {
+function get_color_palette(x) {
   var colorThief = new ColorThief();
-  var img = document.querySelector('img');
-
+  var img = x;
+  console.log(img)
   if (img.complete) {
-    var colorArr = colorThief.getPalette(img, 2);
-    console.log(colorArr)
+    var colorArr = colorThief.getPalette(img, 4);
   } else {
     image.addEventListener('load', function() {
-      var colorArr = colorThief.getPalette(img, 2);
-      console.log(colorArr)
+      var colorArr = colorThief.getPalette(img, 4);
     });
   }
 
@@ -33,10 +32,8 @@ function rgbToHslConvert(x){
 
   var i;
   for (i = 0; i < x.length; i++) {
-    console.log(x[i][0] + "a" + x[i][1] + x[i][2])
     var hslValue = rgbToHsl(x[i][0], x[i][1], x[i][2])
     var tester = Math.round(hslValue[0] * 360)
-    console.log(tester)
     if(tester < 10 || tester > 354){
       console.log("red");
     } else if(tester >=70 && tester <=140){
@@ -55,4 +52,16 @@ function rgbToHslConvert(x){
       console.log("green")
     }
   }
+}
+
+function testFunction(a){
+  alert("this is a test" + a)
+  console.log(a)
+}
+
+var flowers = document.getElementsByClassName("flowerElement")
+console.log(flowers)
+
+for (var i = 0; i < flowers.length; i++) {
+    flowers[i].addEventListener('click', function(){get_color_palette(this)}, false);
 }
