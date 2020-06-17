@@ -60,7 +60,6 @@ function testFunction(a){
 }
 
 var flowers = document.getElementsByClassName("flowerElement")
-console.log(flowers)
 
 for (var i = 0; i < flowers.length; i++) {
     flowers[i].addEventListener('click', function(){get_color_palette(this)}, false);

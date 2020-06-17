@@ -1,17 +1,29 @@
-var x = document.getElementById("customiseInner");
-var acc = x.getElementsByClassName("accordion");
+var acc = document.getElementsByClassName("accordion");
+var panel = document.getElementsByClassName("panel");
 var i;
-var test = document.getElementsByClassName("accordion")[0];
-console.log(acc)
-console.log(test)
+
+console.log(panel[1])
+console.log(acc[1])
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+  acc[i].addEventListener('click', function(){accordion(this, panel)} , false);
+}
+
+function accordion(x, y){
+    for (i = 0; i < acc.length; i++) {
+      if(acc[i].classList.contains("active") && acc[i] != x){
+        console.log("true")
+        acc[i].classList.remove("active")
+        y[i].style.maxHeight = null;
+      }
     }
-  });
+
+  var section = x
+  x.classList.toggle("active");
+
+  var panel = x.nextElementSibling;
+  if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
 }
