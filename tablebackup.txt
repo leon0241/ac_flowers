@@ -1,0 +1,73 @@
+
+            <table>
+              <tr>
+                <td><img class="flowerElement" src="/images/Roses/rose7.png" alt="White Rose"></td>
+                <td><img class="flowerElement" src="/images/Roses/rose4.png" alt="Pink Rose"></td>
+                <td><img class="flowerElement" src="/images/Roses/rose6.png" alt="Red Rose"></td>
+                <td><img class="flowerElement" src="/images/Roses/rose3.png" alt="Orange Rose"></td>
+                <td><img class="flowerElement" src="/images/Roses/rose8.png" alt="Yellow Rose"></td>
+                <td><img class="flowerElement" src="/images/Roses/rose2.png" alt="Blue Rose"></td>
+                <td><img class="flowerElement" src="/images/Roses/rose5.png" alt="Purple Rose"></td>
+                <td><img class="flowerElement" src="/images/Roses/rose1.png" alt="Black Rose"></td>
+              </tr>
+              <tr>
+                <td><div id="fswatch1" class="fswatch"></div></td>
+                <td><div id="fswatch2" class="fswatch"></div></td>
+                <td><div id="fswatch3" class="fswatch"></div></td>
+                <td><div id="fswatch4" class="fswatch"></div></td>
+                <td><div id="fswatch5" class="fswatch"></div></td>
+                <td><div id="fswatch6" class="fswatch"></div></td>
+                <td><div id="fswatch7" class="fswatch"></div></td>
+                <td><div id="fswatch8" class="fswatch"></div></td>
+              </tr>
+            </table>
+
+
+
+            <div id="cSwatch6" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Roses/rose2.png" alt="Blue Rose"></div>
+            <div id="cSwatch7" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Roses/rose5.png" alt="Purple Rose"></div>
+            <div id="cSwatch8" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Roses/rose1.png" alt="Black Rose"></div>
+            <div id="cSwatch9" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Cosmos/cosmos5.png" alt="White Cosmos"></div>
+            <div id="cSwatch10" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Cosmos/cosmos3.png" alt="Pink Cosmos"></div>
+            <div id="cSwatch11" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Cosmos/cosmos4.png" alt="Red Cosmos"></div>
+            <div id="cSwatch12" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Cosmos/cosmos2.png" alt="Orange Cosmos"></div>
+            <div id="cSwatch13" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Cosmos/cosmos6.png" alt="Yellow Cosmos"></div>
+            <div id="cSwatch14" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Cosmos/cosmos1.png" alt="Black Cosmos"></div>
+            <div id="cSwatch15" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip6.png" alt="White Tulip"></div>
+            <div id="cSwatch16" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip3.png" alt="Pink Tulip"></div>
+            <div id="cSwatch17" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip5.png" alt="Red Tulip"></div>
+            <div id="cSwatch18" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip2.png" alt="Orange Tulip"></div>
+            <div id="cSwatch19" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip7.png" alt="Yellow Tulip"></div>
+            <div id="cSwatch20" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip4.png" alt="Purple Tulip"></div>
+            <div id="cSwatch21" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip1.png" alt="Black Tulip"></div>
+            <div id="cSwatch22" class="cSwatch" draggable="true"><img class="swatchFlower secondary" src="/images/Pansies/pansy5.png" alt="White Pansy"></div>
+            <div id="cSwatch23" class="cSwatch" draggable="true"><img class="swatchFlower secondary" src="/images/Pansies/pansy3.png" alt="Red Pansy"></div>
+            <div id="cSwatch24" class="cSwatch" draggable="true"><img class="swatchFlower special" src="/images/Pansies/pansy4.png" alt="Orange Pansy"></div>
+            <div id="cSwatch25" class="cSwatch" draggable="true"><img class="swatchFlower secondary" src="/images/Pansies/pansy6.png" alt="Yellow Pansy"></div>
+            <div id="cSwatch26" class="cSwatch" draggable="true"><img class="swatchFlower tertiary" src="/images/Pansies/pansy1.png" alt="Blue Pansy"></div>
+            <div id="cSwatch27" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Pansies/pansy2.png" alt="Purple Pansy"></div>
+            <div id="cSwatch28" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Lilies/lily5.png" alt="White Lily"></div>
+            <div id="cSwatch29" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Lilies/lily3.png" alt="Pink Lily"></div>
+            <div id="cSwatch30" class="cSwatch" draggable="true"><img class="swatchFlower secondary" src="/images/Lilies/lily4.png" alt="Red Lily"></div>
+            <div id="cSwatch31" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Lilies/lily2.png" alt="Orange Lily"></div>
+            <div id="cSwatch32" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Lilies/lily6.png" alt="Yellow Lily"></div>
+            <div id="cSwatch33" class="cSwatch" draggable="true"><img class="swatchFlower secondary" src="/images/Lilies/lily1.png" alt="Black Lily"></div>
+            <div id="cSwatch34" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth6.png" alt="White Hyacinth"></div>
+            <div id="cSwatch35" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth3.png" alt="Pink Hyacinth"></div>
+            <div id="cSwatch36" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth5.png" alt="Red Hyacinth"></div>
+            <div id="cSwatch37" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth2.png" alt="Orange Hyacinth"></div>
+            <div id="cSwatch38" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth7.png" alt="Yellow Hyacinth"></div>
+            <div id="cSwatch39" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth1.png" alt="Blue Hyacinth"></div>
+            <div id="cSwatch40" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth4.png" alt="Purple Hyacinth"></div>
+            <div id="cSwatch41" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Mums/mum5.png" alt="White Mum"></div>
+            <div id="cSwatch42" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Mums/mum2.png" alt="Pink Mum"></div>
+            <div id="cSwatch43" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Mums/mum4.png" alt="Red Mum"></div>
+            <div id="cSwatch44" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Mums/mum6.png" alt="Yellow Mum"></div>
+            <div id="cSwatch45" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Mums/mum1.png" alt="Green Mum"></div>
+            <div id="cSwatch46" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Mums/mum3.png" alt="Purple Mum"></div>
+            <div id="cSwatch47" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Windflowers/windflower6.png" alt="White Windflower"></div>
+            <div id="cSwatch48" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Windflowers/windflower3.png" alt="Pink Windflower"></div>
+            <div id="cSwatch49" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Windflowers/windflower5.png" alt="Red Windflower"></div>
+            <div id="cSwatch50" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Windflowers/windflower2.png" alt="Orange Windflower"></div>
+            <div id="cSwatch51" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Windflowers/windflower1.png" alt="Blue Windflower"></div>
+            <div id="cSwatch52" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Windflowers/windflower4.png" alt="Purple Windflower"></div>

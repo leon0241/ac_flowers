@@ -1,9 +1,11 @@
 .swatch{
   height:100px;
   width:100px;
+  display: flex;
+  flex-direction: row;
 }
 
-.accordion {
+.accordionStyle {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -16,19 +18,58 @@
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
-  background-color: #ccc;
+
+.customise {
+  width: 50%
+}
+
+.accordion, .accordionOuter{
+  .accordionStyle();
+    &:hover, .active{
+    background-color: #ccc;
+  }
 }
 
 .panel {
   padding: 0 18px;
   background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
 }
 
-.swatches {
+table {
+  width: 100%;
+  height: 200px;
+}
+
+td{
+  width: 15%;
+}
+
+table > .flowerElement{
+  width: 100%;
+  height: 100px;
+}
+
+.customise {
+  width: 50%
+}
+
+.colourInfo{
   display: flex;
   flex-direction: row;
+}
+
+.colorArray{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cSwatch{
+  height: 50px;
+  width: 50px;
+}
+
+.swatchFlower{
+  height: 50px;
+  width: 50px;
 }

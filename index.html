@@ -6,103 +6,168 @@
 
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <script src="Javascript/Tools/less.js" type="text/javascript"></script>
-    <script src="Javascript/accordion.js" type="module">
-
+    <script type="text/javascript">
+      function bigAccordion(x){
+        var panel = x.nextElementSibling;
+        if (panel.style.display === "none") {
+          panel.style.display = "block";
+        } else {
+          panel.style.display = "none";
+        }
+      }
     </script>
+    <script type="module" src="Javascript/accordion.js"></script>
+    <script type="module" src="Javascript/hideflowers.js"></script>
+    <script type="module" src="Javascript/draganddrop.js"></script>
   </head>
   <body>
     <h1>Animal crossing flower colour guide</h1>
     <script type="module" src="Javascript/get_colors.js"></script>
+    <div class="colourInfo">
+      <div class="customise">
+        <button type="button" class="accordionOuter" onmousedown="bigAccordion(this)">Customise flower colours</button>
+        <div class="customiseInner" style="display: block">
+          <button type="button" class="accordion">Roses</button>
+          <div class="panel" id="panelRose" style="display: none">
+            <img class="flowerElement" src="/images/Roses/rose7.png" alt="White Rose">
+            <img class="flowerElement" src="/images/Roses/rose4.png" alt="Pink Rose">
+            <img class="flowerElement" src="/images/Roses/rose6.png" alt="Red Rose">
+            <img class="flowerElement" src="/images/Roses/rose3.png" alt="Orange Rose">
+            <img class="flowerElement" src="/images/Roses/rose8.png" alt="Yellow Rose">
+            <img class="flowerElement" src="/images/Roses/rose2.png" alt="Blue Rose">
+            <img class="flowerElement" src="/images/Roses/rose5.png" alt="Purple Rose">
+            <img class="flowerElement" src="/images/Roses/rose1.png" alt="Black Rose">
+          </div>
+          <button type="button" class="accordion">Cosmos</button>
+          <div class="panel" id="panelCosmos" style="display: none">
+            <img class="flowerElement" src="/images/Cosmos/cosmos5.png" alt="White Cosmos">
+            <img class="flowerElement" src="/images/Cosmos/cosmos3.png" alt="Pink Cosmos">
+            <img class="flowerElement" src="/images/Cosmos/cosmos4.png" alt="Red Cosmos">
+            <img class="flowerElement" src="/images/Cosmos/cosmos2.png" alt="Orange Cosmos">
+            <img class="flowerElement" src="/images/Cosmos/cosmos6.png" alt="Yellow Cosmos">
+            <img class="flowerElement" src="/images/Cosmos/cosmos1.png" alt="Black Cosmos">
+          </div>
+          <button type="button" class="accordion">Tulips</button>
+          <div class="panel" id="panelTulip" style="display: none">
+            <img class="flowerElement" src="/images/Tulips/tulip6.png" alt="White Tulip">
+            <img class="flowerElement" src="/images/Tulips/tulip3.png" alt="Pink Tulip">
+            <img class="flowerElement" src="/images/Tulips/tulip5.png" alt="Red Tulip">
+            <img class="flowerElement" src="/images/Tulips/tulip2.png" alt="Orange Tulip">
+            <img class="flowerElement" src="/images/Tulips/tulip7.png" alt="Yellow Tulip">
+            <img class="flowerElement" src="/images/Tulips/tulip4.png" alt="Purple Tulip">
+            <img class="flowerElement" src="/images/Tulips/tulip1.png" alt="Black Tulip">
+          </div>
+          <button type="button" class="accordion">Pansies</button>
+          <div class="panel" id="panelPansy" style="display: none">
+            <img class="flowerElement secondary" src="/images/Pansies/pansy5.png" alt="White Pansy">
+            <img class="flowerElement secondary" src="/images/Pansies/pansy3.png" alt="Red Pansy">
+            <img class="flowerElement special" src="/images/Pansies/pansy4.png" alt="Orange Pansy">
+            <img class="flowerElement secondary" src="/images/Pansies/pansy6.png" alt="Yellow Pansy">
+            <img class="flowerElement" src="/images/Pansies/pansy1.png" alt="Blue Pansy">
+            <img class="flowerElement tertiary" src="/images/Pansies/pansy2.png" alt="Purple Pansy">
+          </div>
+          <button type="button" class="accordion">Lilies</button>
+          <div class="panel" id="panelLily" style="display: none">
+            <img class="flowerElement" src="/images/Lilies/lily5.png" alt="White Lily">
+            <img class="flowerElement" src="/images/Lilies/lily3.png" alt="Pink Lily">
+            <img class="flowerElement secondary" src="/images/Lilies/lily4.png" alt="Red Lily">
+            <img class="flowerElement" src="/images/Lilies/lily2.png" alt="Orange Lily">
+            <img class="flowerElement" src="/images/Lilies/lily6.png" alt="Yellow Lily">
+            <img class="flowerElement secondary" src="/images/Lilies/lily1.png" alt="Black Lily">
+          </div>
+          <button type="button" class="accordion">Hyacinths</button>
+          <div class="panel" id="panelHyacinth" style="display: none">
+            <img class="flowerElement" src="/images/Hyacinths/hyacinth6.png" alt="White Hyacinth">
+            <img class="flowerElement" src="/images/Hyacinths/hyacinth3.png" alt="Pink Hyacinth">
+            <img class="flowerElement" src="/images/Hyacinths/hyacinth5.png" alt="Red Hyacinth">
+            <img class="flowerElement" src="/images/Hyacinths/hyacinth2.png" alt="Orange Hyacinth">
+            <img class="flowerElement" src="/images/Hyacinths/hyacinth7.png" alt="Yellow Hyacinth">
+            <img class="flowerElement" src="/images/Hyacinths/hyacinth1.png" alt="Blue Hyacinth">
+            <img class="flowerElement" src="/images/Hyacinths/hyacinth4.png" alt="Purple Hyacinth">
+          </div>
+          <button type="button" class="accordion">Mums</button>
+          <div class="panel" id="panelMum" style="display: none">
+            <img class="flowerElement" src="/images/Mums/mum5.png" alt="White Mum">
+            <img class="flowerElement" src="/images/Mums/mum2.png" alt="Pink Mum">
+            <img class="flowerElement" src="/images/Mums/mum4.png" alt="Red Mum">
+            <img class="flowerElement" src="/images/Mums/mum6.png" alt="Yellow Mum">
+            <img class="flowerElement" src="/images/Mums/mum1.png" alt="Green Mum">
+            <img class="flowerElement" src="/images/Mums/mum3.png" alt="Purple Mum">
+          </div>
+          <button type="button" class="accordion">Windflowers</button>
+          <div class="panel" id="panelWindflower" style="display: none">
+            <img class="flowerElement" src="/images/Windflowers/windflower6.png" alt="White Windflower">
+            <img class="flowerElement" src="/images/Windflowers/windflower3.png" alt="Pink Windflower">
+            <img class="flowerElement" src="/images/Windflowers/windflower5.png" alt="Red Windflower">
+            <img class="flowerElement" src="/images/Windflowers/windflower2.png" alt="Orange Windflower">
+            <img class="flowerElement" src="/images/Windflowers/windflower1.png" alt="Blue Windflower">
+            <img class="flowerElement" src="/images/Windflowers/windflower4.png" alt="Purple Windflower">
+          </div>
+        </div>
+      </div>
 
-    <div class="customise">
-      <button type="button" class="accordionOuter">Customise flower colours</button>
-      <div class="customiseInner">
-        <button type="button" class="accordion">Roses</button>
-        <div class="panel" id="panelRose">
-          <img class="flowerElement" src="/images/Roses/rose7.png" alt="White Rose">
-          <img class="flowerElement" src="/images/Roses/rose4.png" alt="Pink Rose">
-          <img class="flowerElement" src="/images/Roses/rose6.png" alt="Red Rose">
-          <img class="flowerElement" src="/images/Roses/rose3.png" alt="Orange Rose">
-          <img class="flowerElement" src="/images/Roses/rose8.png" alt="Yellow Rose">
-          <img class="flowerElement" src="/images/Roses/rose2.png" alt="Blue Rose">
-          <img class="flowerElement" src="/images/Roses/rose5.png" alt="Purple Rose">
-          <img class="flowerElement" src="/images/Roses/rose1.png" alt="Black Rose">
-          <img class="flowerElement" src="/images/Roses/rose9.png" alt="Gold Rose">
-        </div>
-        <button type="button" class="accordion">Cosmos</button>
-        <div class="panel" id="panelCosmos">
-          <img class="flowerElement" src="/images/Cosmos/cosmos5.png" alt="White Cosmos">
-          <img class="flowerElement" src="/images/Cosmos/cosmos3.png" alt="Pink Cosmos">
-          <img class="flowerElement" src="/images/Cosmos/cosmos4.png" alt="Red Cosmos">
-          <img class="flowerElement" src="/images/Cosmos/cosmos2.png" alt="Orange Cosmos">
-          <img class="flowerElement" src="/images/Cosmos/cosmos6.png" alt="Yellow Cosmos">
-          <img class="flowerElement" src="/images/Cosmos/cosmos1.png" alt="Black Cosmos">
-        </div>
-        <button type="button" class="accordion">Tulips</button>
-        <div class="panel" id="panelTulip">
-          <img class="flowerElement" src="/images/Tulips/tulip6.png" alt="White Tulip">
-          <img class="flowerElement" src="/images/Tulips/tulip3.png" alt="Pink Tulip">
-          <img class="flowerElement" src="/images/Tulips/tulip5.png" alt="Red Tulip">
-          <img class="flowerElement" src="/images/Tulips/tulip2.png" alt="Orange Tulip">
-          <img class="flowerElement" src="/images/Tulips/tulip7.png" alt="Yellow Tulip">
-          <img class="flowerElement" src="/images/Tulips/tulip4.png" alt="Purple Tulip">
-          <img class="flowerElement" src="/images/Tulips/tulip1.png" alt="Black Tulip">
-        </div>
-        <button type="button" class="accordion">Pansies</button>
-        <div class="panel" id="panelPansy">
-          <img class="flowerElement" src="/images/Pansies/pansy5.png" alt="White Pansy">
-          <img class="flowerElement" src="/images/Pansies/pansy3.png" alt="Red Pansy">
-          <img class="flowerElement" src="/images/Pansies/pansy4.png" alt="Orange Pansy">
-          <img class="flowerElement" src="/images/Pansies/pansy6.png" alt="Yellow Pansy">
-          <img class="flowerElement" src="/images/Pansies/pansy1.png" alt="Blue Pansy">
-          <img class="flowerElement" src="/images/Pansies/pansy2.png" alt="Purple Pansy">
-        </div>
-        <button type="button" class="accordion">Lilies</button>
-        <div class="panel" id="panelLily">
-          <img class="flowerElement" src="/images/Lilies/lily5.png" alt="White Lily">
-          <img class="flowerElement" src="/images/Lilies/lily3.png" alt="Pink Lily">
-          <img class="flowerElement" src="/images/Lilies/lily4.png" alt="Red Lily">
-          <img class="flowerElement" src="/images/Lilies/lily2.png" alt="Orange Lily">
-          <img class="flowerElement" src="/images/Lilies/lily6.png" alt="Yellow Lily">
-          <img class="flowerElement" src="/images/Lilies/lily1.png" alt="Black Lily">
-        </div>
-        <button type="button" class="accordion">Hyacinths</button>
-        <div class="panel" id="panelHyacinth">
-          <img class="flowerElement" src="/images/Hyacinths/hyacinth6.png" alt="White Hyacinth">
-          <img class="flowerElement" src="/images/Hyacinths/hyacinth3.png" alt="Pink Hyacinth">
-          <img class="flowerElement" src="/images/Hyacinths/hyacinth5.png" alt="Red Hyacinth">
-          <img class="flowerElement" src="/images/Hyacinths/hyacinth2.png" alt="Orange Hyacinth">
-          <img class="flowerElement" src="/images/Hyacinths/hyacinth7.png" alt="Yellow Hyacinth">
-          <img class="flowerElement" src="/images/Hyacinths/hyacinth1.png" alt="Blue Hyacinth">
-          <img class="flowerElement" src="/images/Hyacinths/hyacinth4.png" alt="Purple Hyacinth">
-        </div>
-        <button type="button" class="accordion">Mums</button>
-        <div class="panel" id="panelMum">
-          <img class="flowerElement" src="/images/Mums/mum5.png" alt="White Mum">
-          <img class="flowerElement" src="/images/Mums/mum2.png" alt="Pink Mum">
-          <img class="flowerElement" src="/images/Mums/mum4.png" alt="Red Mum">
-          <img class="flowerElement" src="/images/Mums/mum6.png" alt="Yellow Mum">
-          <img class="flowerElement" src="/images/Mums/mum1.png" alt="Green Mum">
-          <img class="flowerElement" src="/images/Mums/mum3.png" alt="Purple Mum">
-        </div>
-        <button type="button" class="accordion">Windflowers</button>
-        <div class="panel" id="panelWindflower">
-          <img class="flowerElement" src="/images/Windflowers/windflower6.png" alt="White Windflower">
-          <img class="flowerElement" src="/images/Windflowers/windflower3.png" alt="Pink Windflower">
-          <img class="flowerElement" src="/images/Windflowers/windflower5.png" alt="Red Windflower">
-          <img class="flowerElement" src="/images/Windflowers/windflower2.png" alt="Orange Windflower">
-          <img class="flowerElement" src="/images/Windflowers/windflower1.png" alt="Blue Windflower">
-          <img class="flowerElement" src="/images/Windflowers/windflower4.png" alt="Purple Windflower">
-        </div>
+      <div class="swatches">
+        <div id="swatch1" class="swatch"></div>
+        <div id="swatch2" class="swatch"></div>
+        <div id="swatch3" class="swatch"></div>
+        <div id="swatch4" class="swatch"></div>
       </div>
     </div>
 
-    <div class="swatches">
-      <div id="swatch1" class="swatch"></div>
-      <div id="swatch2" class="swatch"></div>
-      <div id="swatch3" class="swatch"></div>
-      <div id="swatch4" class="swatch"></div>
-      <div id="swatch5" class="swatch"></div>
+    <div class="colorArray">
+      <div id="cSwatch1" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Roses/rose7.png" alt="White Rose"></div>
+      <div id="cSwatch2" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Roses/rose4.png" alt="Pink Rose"></div>
+      <div id="cSwatch3" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Roses/rose6.png" alt="Red Rose"></div>
+      <div id="cSwatch4" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Roses/rose3.png" alt="Orange Rose"></div>
+      <div id="cSwatch5" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Roses/rose8.png" alt="Yellow Rose"></div>
+      <div id="cSwatch6" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Roses/rose2.png" alt="Blue Rose"></div>
+      <div id="cSwatch7" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Roses/rose5.png" alt="Purple Rose"></div>
+      <div id="cSwatch8" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Roses/rose1.png" alt="Black Rose"></div>
+      <div id="cSwatch9" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Cosmos/cosmos5.png" alt="White Cosmos"></div>
+      <div id="cSwatch10" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Cosmos/cosmos3.png" alt="Pink Cosmos"></div>
+      <div id="cSwatch11" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Cosmos/cosmos4.png" alt="Red Cosmos"></div>
+      <div id="cSwatch12" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Cosmos/cosmos2.png" alt="Orange Cosmos"></div>
+      <div id="cSwatch13" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Cosmos/cosmos6.png" alt="Yellow Cosmos"></div>
+      <div id="cSwatch14" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Cosmos/cosmos1.png" alt="Black Cosmos"></div>
+      <div id="cSwatch15" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip6.png" alt="White Tulip"></div>
+      <div id="cSwatch16" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip3.png" alt="Pink Tulip"></div>
+      <div id="cSwatch17" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip5.png" alt="Red Tulip"></div>
+      <div id="cSwatch18" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip2.png" alt="Orange Tulip"></div>
+      <div id="cSwatch19" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip7.png" alt="Yellow Tulip"></div>
+      <div id="cSwatch20" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip4.png" alt="Purple Tulip"></div>
+      <div id="cSwatch21" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Tulips/tulip1.png" alt="Black Tulip"></div>
+      <div id="cSwatch22" class="cSwatch" draggable="true"><img class="swatchFlower secondary" src="/images/Pansies/pansy5.png" alt="White Pansy"></div>
+      <div id="cSwatch23" class="cSwatch" draggable="true"><img class="swatchFlower secondary" src="/images/Pansies/pansy3.png" alt="Red Pansy"></div>
+      <div id="cSwatch24" class="cSwatch" draggable="true"><img class="swatchFlower special" src="/images/Pansies/pansy4.png" alt="Orange Pansy"></div>
+      <div id="cSwatch25" class="cSwatch" draggable="true"><img class="swatchFlower secondary" src="/images/Pansies/pansy6.png" alt="Yellow Pansy"></div>
+      <div id="cSwatch26" class="cSwatch" draggable="true"><img class="swatchFlower tertiary" src="/images/Pansies/pansy1.png" alt="Blue Pansy"></div>
+      <div id="cSwatch27" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Pansies/pansy2.png" alt="Purple Pansy"></div>
+      <div id="cSwatch28" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Lilies/lily5.png" alt="White Lily"></div>
+      <div id="cSwatch29" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Lilies/lily3.png" alt="Pink Lily"></div>
+      <div id="cSwatch30" class="cSwatch" draggable="true"><img class="swatchFlower secondary" src="/images/Lilies/lily4.png" alt="Red Lily"></div>
+      <div id="cSwatch31" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Lilies/lily2.png" alt="Orange Lily"></div>
+      <div id="cSwatch32" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Lilies/lily6.png" alt="Yellow Lily"></div>
+      <div id="cSwatch33" class="cSwatch" draggable="true"><img class="swatchFlower secondary" src="/images/Lilies/lily1.png" alt="Black Lily"></div>
+      <div id="cSwatch34" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth6.png" alt="White Hyacinth"></div>
+      <div id="cSwatch35" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth3.png" alt="Pink Hyacinth"></div>
+      <div id="cSwatch36" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth5.png" alt="Red Hyacinth"></div>
+      <div id="cSwatch37" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth2.png" alt="Orange Hyacinth"></div>
+      <div id="cSwatch38" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth7.png" alt="Yellow Hyacinth"></div>
+      <div id="cSwatch39" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth1.png" alt="Blue Hyacinth"></div>
+      <div id="cSwatch40" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Hyacinths/hyacinth4.png" alt="Purple Hyacinth"></div>
+      <div id="cSwatch41" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Mums/mum5.png" alt="White Mum"></div>
+      <div id="cSwatch42" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Mums/mum2.png" alt="Pink Mum"></div>
+      <div id="cSwatch43" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Mums/mum4.png" alt="Red Mum"></div>
+      <div id="cSwatch44" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Mums/mum6.png" alt="Yellow Mum"></div>
+      <div id="cSwatch45" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Mums/mum1.png" alt="Green Mum"></div>
+      <div id="cSwatch46" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Mums/mum3.png" alt="Purple Mum"></div>
+      <div id="cSwatch47" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Windflowers/windflower6.png" alt="White Windflower"></div>
+      <div id="cSwatch48" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Windflowers/windflower3.png" alt="Pink Windflower"></div>
+      <div id="cSwatch49" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Windflowers/windflower5.png" alt="Red Windflower"></div>
+      <div id="cSwatch50" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Windflowers/windflower2.png" alt="Orange Windflower"></div>
+      <div id="cSwatch51" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Windflowers/windflower1.png" alt="Blue Windflower"></div>
+      <div id="cSwatch52" class="cSwatch" draggable="true"><img class="swatchFlower" src="/images/Windflowers/windflower4.png" alt="Purple Windflower"></div>
     </div>
+    <button type="button" id="hideFlowersB">Hide flowers</button>
   </body>
 </html>
